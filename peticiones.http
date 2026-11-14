@@ -1,0 +1,54 @@
+### Peticiones de prueba — extensión "REST Client" de VS Code
+@base = http://localhost:3000
+
+### Registro de usuario
+POST {{base}}/register
+Content-Type: application/json
+
+{ "nombre": "Gerardo Olivares", "email": "gerardo@ejemplo.com", "password": "Tareas2026" }
+
+### Inicio de sesión (guarda el token)
+# @name login
+POST {{base}}/login
+Content-Type: application/json
+
+{ "email": "gerardo@ejemplo.com", "password": "Tareas2026" }
+
+###
+@token = {{login.response.body.token}}
+
+### GET /tareas sin token -> 401
+GET {{base}}/tareas
+
+### GET /tareas con token
+GET {{base}}/tareas
+Authorization: Bearer {{token}}
+
+### POST /tareas
+# @name nueva
+POST {{base}}/tareas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "titulo": "Entregar la Actividad 3", "descripcion": "Subir server.js, tareas.json, el Word y el video." }
+
+###
+@id = {{nueva.response.body.tarea.id}}
+
+### PUT /tareas/:id
+PUT {{base}}/tareas/{{id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "completada": true }
+
+### DELETE /tareas/:id
+DELETE {{base}}/tareas/{{id}}
+Authorization: Bearer {{token}}
+
+### POST inválido -> 400
+POST {{base}}/tareas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "descripcion": "Falta el título" }

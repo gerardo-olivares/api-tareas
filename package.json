@@ -1,0 +1,26 @@
+{
+  "name": "api-tareas",
+  "version": "1.0.0",
+  "description": "API RESTful de tareas con Express, almacenamiento en archivos JSON (fs.promises) y autenticación JWT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "debug": "node --inspect server.js"
+  },
+  "keywords": [],
+  "author": "Gerardo Olivares Mijares",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.4.0",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

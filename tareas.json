@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bfa20823-f2ac-4b63-8a02-d28a28e539c9",
+    "titulo": "Configurar el proyecto api-tareas",
+    "descripcion": "Inicializar con npm init -y e instalar express, body-parser, jsonwebtoken y bcryptjs.",
+    "completada": true,
+    "usuarioId": "79a7b3e0-0833-4ccd-be92-a9d413162632",
+    "creadaEn": "2026-11-14T17:17:20.260Z",
+    "actualizadaEn": "2026-11-14T17:17:20.427Z"
+  },
+  {
+    "id": "18d1e8d6-0b6f-406a-9b53-4e1132daf3b2",
+    "titulo": "Crear las rutas CRUD de /tareas",
+    "descripcion": "Implementar GET, POST, PUT y DELETE con lectura y escritura en tareas.json.",
+    "completada": true,
+    "usuarioId": "79a7b3e0-0833-4ccd-be92-a9d413162632",
+    "creadaEn": "2026-11-14T17:17:20.287Z",
+    "actualizadaEn": "2026-11-14T17:17:20.386Z"
+  },
+  {
+    "id": "8ed94196-d59f-4fcc-b41a-0b0265d9b7d2",
+    "titulo": "Proteger rutas con JWT",
+    "descripcion": "Agregar el middleware autenticarToken a las rutas de /tareas.",
+    "completada": false,
+    "usuarioId": "79a7b3e0-0833-4ccd-be92-a9d413162632",
+    "creadaEn": "2026-11-14T17:17:20.320Z",
+    "actualizadaEn": "2026-11-14T17:17:20.320Z"
+  },
+  {
+    "id": "83dd72c0-0dd8-435b-bbb0-6d46cd08000f",
+    "titulo": "Grabar el video demostrativo",
+    "descripcion": "Mostrar el registro, el inicio de sesión, el CRUD y la protección de rutas.",
+    "completada": false,
+    "usuarioId": "79a7b3e0-0833-4ccd-be92-a9d413162632",
+    "creadaEn": "2026-11-14T17:17:20.350Z",
+    "actualizadaEn": "2026-11-14T17:17:20.350Z"
+  }
+]
